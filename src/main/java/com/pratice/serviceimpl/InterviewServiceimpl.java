@@ -50,7 +50,7 @@ public class InterviewServiceimpl implements InterviewService {
 		Interview in = interviewRepository.findById(i_id).orElse(null);
 		
 		list.add(in);
-		
+	
 		ca.setInterview(list);	
 		
 		candidateRepository.save(ca);

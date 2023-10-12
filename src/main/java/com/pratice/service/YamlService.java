@@ -4,6 +4,7 @@ import com.yaml.Employee;
 
 public interface YamlService {
 
-	Employee getAllEmployee();
+	boolean updateFile(String owner, String repoName, String filePath, String content, String commitMessage);
+   
 	
 }
